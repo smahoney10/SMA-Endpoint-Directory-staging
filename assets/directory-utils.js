@@ -51,6 +51,17 @@
     return /^https?:\/\//i.test(text);
   }
 
+  function getPrimaryEndpointUrl(endpoint) {
+    if (Array.isArray(endpoint?.productionUrls)) {
+      const firstAvailableUrl = endpoint.productionUrls.find((url) => isAvailableUrl(url));
+      if (firstAvailableUrl) {
+        return clean(firstAvailableUrl);
+      }
+    }
+
+    return isAvailableUrl(endpoint?.productionUrl) ? clean(endpoint.productionUrl) : "";
+  }
+
   function searchableText(row) {
     return [
       row.state,
@@ -148,6 +159,7 @@
   const api = {
     buildMailtoUpdateHref,
     filterEndpoints,
+    getPrimaryEndpointUrl,
     isAvailableUrl,
     normalizeStatus,
     validateUpdateRequest,

@@ -280,6 +280,11 @@ h3 {
   color: var(--color-navy);
 }
 
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
 .compact {
   min-height: 36px;
   padding: 0.45rem 0.75rem;

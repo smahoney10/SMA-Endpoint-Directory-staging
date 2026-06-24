@@ -3,6 +3,7 @@ const assert = require("node:assert/strict");
 const {
   buildMailtoUpdateHref,
   filterEndpoints,
+  getPrimaryEndpointUrl,
   isAvailableUrl,
   normalizeStatus,
   validateUpdateRequest,
@@ -15,6 +16,30 @@ assert.equal(normalizeStatus(""), "Unknown");
 assert.equal(isAvailableUrl("N/A"), false);
 assert.equal(isAvailableUrl("Not Yet Available"), false);
 assert.equal(isAvailableUrl("https://example.test/fhir"), true);
+
+assert.equal(
+  getPrimaryEndpointUrl({
+    productionUrls: ["https://first.test/fhir", "https://second.test/fhir"],
+    productionUrl: "https://fallback.test/fhir",
+  }),
+  "https://first.test/fhir"
+);
+
+assert.equal(
+  getPrimaryEndpointUrl({
+    productionUrls: [],
+    productionUrl: "https://fallback.test/fhir",
+  }),
+  "https://fallback.test/fhir"
+);
+
+assert.equal(
+  getPrimaryEndpointUrl({
+    productionUrls: [],
+    productionUrl: "Not Yet Available",
+  }),
+  ""
+);
 
 const rows = [
   {

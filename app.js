@@ -32,6 +32,7 @@
     endpointApiType: document.getElementById("endpoint-api-type"),
     endpointStatus: document.getElementById("endpoint-status"),
     endpointResultCount: document.getElementById("endpoint-result-count"),
+    copyStatus: document.getElementById("copy-status"),
     endpointTableBody: document.getElementById("endpoint-table-body"),
     clearEndpointFilters: document.getElementById("clear-endpoint-filters"),
     endpointDetail: document.getElementById("endpoint-detail"),
@@ -105,13 +106,38 @@
   }
 
   function firstUrlCell(endpoint) {
-    if (!endpoint.productionUrls.length) {
+    const url = utils.getPrimaryEndpointUrl(endpoint);
+    if (!url) {
       return '<span class="muted">Not available</span>';
     }
 
-    const url = endpoint.productionUrls[0];
-    const extra = endpoint.productionUrls.length > 1 ? ` <span class="muted">+${endpoint.productionUrls.length - 1} more</span>` : "";
-    return `<a href="${escapeHtml(url)}">Open URL</a>${extra}`;
+    const urlCount = Array.isArray(endpoint.productionUrls) ? endpoint.productionUrls.length : 1;
+    const extra = urlCount > 1 ? ` <span class="muted">+${urlCount - 1} more</span>` : "";
+    const label = `Copy endpoint URL for ${endpoint.state} ${endpoint.apiType}`;
+    return `<button class="button button-secondary compact" type="button" data-copy-url="${escapeHtml(url)}" aria-label="${escapeHtml(label)}">Copy endpoint URL</button>${extra}`;
+  }
+
+  async function copyEndpointUrl(url) {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(url);
+      return;
+    }
+
+    const textarea = document.createElement("textarea");
+    textarea.value = url;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.top = "-1000px";
+    textarea.style.left = "-1000px";
+    document.body.appendChild(textarea);
+    textarea.select();
+
+    const copied = document.execCommand("copy");
+    textarea.remove();
+
+    if (!copied) {
+      throw new Error("Clipboard copy failed");
+    }
   }
 
   function renderSummary() {
@@ -162,7 +188,7 @@
       <dl class="detail-grid">
         <dt>Status</dt>
         <dd><span class="status ${statusClass(endpoint.status)}">${escapeHtml(utils.normalizeStatus(endpoint.status))}</span></dd>
-        <dt>Production URL</dt>
+        <dt>Endpoint URLs</dt>
         <dd>${linkList(endpoint.productionUrls, endpoint.productionUrl || "Not available")}</dd>
         <dt>FHIR capability statement</dt>
         <dd>${linkList(endpoint.capabilityStatementUrls, endpoint.capabilityStatementUrl || "Not available")}</dd>
@@ -329,7 +355,25 @@
       renderEndpoints();
     });
 
-    elements.endpointTableBody.addEventListener("click", (event) => {
+    elements.endpointTableBody.addEventListener("click", async (event) => {
+      const copyButton = event.target.closest("[data-copy-url]");
+      if (copyButton) {
+        copyButton.disabled = true;
+        try {
+          await copyEndpointUrl(copyButton.dataset.copyUrl);
+          elements.copyStatus.textContent = "Endpoint URL copied to clipboard.";
+          copyButton.textContent = "Copied";
+          window.setTimeout(() => {
+            copyButton.textContent = "Copy endpoint URL";
+            copyButton.disabled = false;
+          }, 1600);
+        } catch (error) {
+          elements.copyStatus.textContent = "Endpoint URL could not be copied. Open Details to view the URL.";
+          copyButton.disabled = false;
+        }
+        return;
+      }
+
       const button = event.target.closest("[data-endpoint-id]");
       if (!button) {
         return;
