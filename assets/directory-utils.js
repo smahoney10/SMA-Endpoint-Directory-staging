@@ -124,7 +124,29 @@
     };
   }
 
+  function buildMailtoUpdateHref(data, recipient = "SMAEndpointDirectory@cms.hhs.gov") {
+    const state = clean(data?.state);
+    const updateType = clean(data?.updateType);
+    const submitterEmail = clean(data?.submitterEmail);
+    const summary = clean(data?.summary);
+    const subject = `SMA Endpoint Directory update request: ${state} - ${updateType}`;
+    const body = [
+      "SMA Endpoint Directory update request",
+      "",
+      `State or territory: ${state}`,
+      `Update type: ${updateType}`,
+      `Submitter email: ${submitterEmail}`,
+      "",
+      `Requested change: ${summary}`,
+      "",
+      "Source: State Medicaid Agency Directory Hub",
+    ].join("\r\n");
+
+    return `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
+
   const api = {
+    buildMailtoUpdateHref,
     filterEndpoints,
     isAvailableUrl,
     normalizeStatus,

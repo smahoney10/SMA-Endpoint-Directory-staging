@@ -387,9 +387,11 @@
     });
 
     elements.confirmUpdate.addEventListener("click", () => {
+      const href = utils.buildMailtoUpdateHref(getUpdateFormData());
       elements.updateReview.hidden = true;
       elements.updateConfirmation.hidden = false;
       elements.updateConfirmation.focus();
+      window.location.href = href;
     });
   }
 

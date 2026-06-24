@@ -1,6 +1,7 @@
 const assert = require("node:assert/strict");
 
 const {
+  buildMailtoUpdateHref,
   filterEndpoints,
   isAvailableUrl,
   normalizeStatus,
@@ -69,5 +70,18 @@ const valid = validateUpdateRequest({
 
 assert.equal(valid.valid, true);
 assert.deepEqual(valid.errors, {});
+
+const mailto = buildMailtoUpdateHref({
+  state: "Alabama",
+  updateType: "Patient Access endpoint",
+  submitterEmail: "person@example.com",
+  summary: "Update the Patient Access endpoint status.",
+});
+
+assert.ok(mailto.startsWith("mailto:SMAEndpointDirectory@cms.hhs.gov?"));
+assert.ok(mailto.includes("subject=SMA%20Endpoint%20Directory%20update%20request%3A%20Alabama%20-%20Patient%20Access%20endpoint"));
+assert.ok(mailto.includes("State%20or%20territory%3A%20Alabama"));
+assert.ok(mailto.includes("Submitter%20email%3A%20person%40example.com"));
+assert.ok(mailto.includes("Requested%20change%3A%20Update%20the%20Patient%20Access%20endpoint%20status."));
 
 console.log("directory-utils tests passed");
