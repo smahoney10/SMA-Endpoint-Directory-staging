@@ -152,9 +152,21 @@ def cell(row: tuple[Any, ...], one_based_index: int) -> Any:
     return row[zero_based]
 
 
+def get_directory_sheet(workbook: Any) -> Any:
+    if SHEET_NAME in workbook.sheetnames:
+        return workbook[SHEET_NAME]
+
+    normalized_sheet_name = SHEET_NAME.strip()
+    for sheet_name in workbook.sheetnames:
+        if clean(sheet_name) == normalized_sheet_name:
+            return workbook[sheet_name]
+
+    return workbook[SHEET_NAME]
+
+
 def build_data() -> dict[str, Any]:
     workbook = openpyxl.load_workbook(WORKBOOK_PATH, read_only=True, data_only=True)
-    sheet = workbook[SHEET_NAME]
+    sheet = get_directory_sheet(workbook)
     rows = list(sheet.iter_rows(min_row=3, values_only=True))
 
     states: list[dict[str, Any]] = []
@@ -202,7 +214,7 @@ def build_data() -> dict[str, Any]:
     return {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "workbook": WORKBOOK_PATH.name,
-        "sourceSheet": SHEET_NAME,
+        "sourceSheet": sheet.title,
         "states": states,
         "endpoints": endpoints,
         "summary": {

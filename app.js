@@ -228,7 +228,7 @@
 
   function providerUrlCell(state) {
     if (!state.providerDirectoryWebsiteAvailable) {
-      return '<span class="status status-unavailable">Not populated in workbook</span>';
+      return `<span class="status status-unavailable">${escapeHtml(state.providerDirectoryWebsiteUrl || "Not available")}</span>`;
     }
     return `<a href="${escapeHtml(state.providerDirectoryWebsiteUrl)}">Open provider directory</a>`;
   }

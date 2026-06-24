@@ -1,7 +1,7 @@
 window.SMA_DIRECTORY_DATA = {
-  "generatedAt": "2026-06-23T20:41:22+00:00",
+  "generatedAt": "2026-06-24T18:45:17+00:00",
   "workbook": "SMAEndpointDirectory.xlsx",
-  "sourceSheet": "SMA Endpoint Directory ",
+  "sourceSheet": "SMA Endpoint Directory",
   "states": [
     {
       "id": "alabama",
@@ -9,8 +9,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-16",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.medicaid.alabamaservices.org/providerDirectory/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 3
     },
     {
@@ -19,8 +19,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-28",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://health.alaska.gov/en/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 4
     },
     {
@@ -29,8 +29,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "N/A",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "http://ahcccsproviderdirectory.az-apep.gov/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 5
     },
     {
@@ -39,7 +39,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2025-12-23",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 6
     },
@@ -49,7 +49,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-08",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 7
     },
@@ -59,8 +59,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-03",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.healthfirstcolorado.com/find-doctors/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 8
     },
     {
@@ -69,8 +69,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-08-04",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.huskyhealthct.org/members/provider_lookup.html",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 9
     },
     {
@@ -79,8 +79,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-08",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://dhcfproviders.caremesh.app/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 10
     },
     {
@@ -89,8 +89,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-27",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://medicaid.dhss.delaware.gov/member/Resources/SearchProviders/tabid/97/Default.aspx?AspxAutoDetectCookieSupport=1",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 11
     },
     {
@@ -99,7 +99,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-14",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 12
     },
@@ -109,8 +109,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-27",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.mmis.georgia.gov/portal/PubAccess.Member%20Information/Find%20a%20Provider/tabId/13/Default.aspx",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 13
     },
     {
@@ -119,7 +119,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "N/A",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 14
     },
@@ -129,8 +129,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-21",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.idmedicaid.com/mhpviewer.aspx?FID=PDIR",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 15
     },
     {
@@ -139,7 +139,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-06-01",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 16
     },
@@ -149,7 +149,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-05-05",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 17
     },
@@ -159,8 +159,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2025-12-08",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://secureapp.dhs.state.ia.us/providersearche/(S(w4pm4l45jrw2hg4555cdsqrr))/Default.aspx",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 18
     },
     {
@@ -169,8 +169,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-26",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://portal.kmap-state-ks.us/PublicPage/ProviderPricing/ProviderDirectorySearch",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 19
     },
     {
@@ -179,7 +179,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-27",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 20
     },
@@ -189,8 +189,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-26",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.lamedicaid.com/apps/provider_demographics/provider_map.aspx",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 21
     },
     {
@@ -199,8 +199,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-27",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://mainecare.maine.gov/mhpviewer.aspx?FID=PDIR",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 22
     },
     {
@@ -209,8 +209,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-06-27",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://health.maryland.gov/mmcp/Pages/provider-finder.aspx",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 23
     },
     {
@@ -219,8 +219,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-04",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://masshealth.ehs.state.ma.us/ProviderDirectory",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 24
     },
     {
@@ -229,8 +229,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-14",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://myhbcld.state.mi.us/myHBPublic/landing.action?request_locale=en#load_page",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 25
     },
     {
@@ -239,7 +239,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-09",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 26
     },
@@ -249,7 +249,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-08",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 27
     },
@@ -259,8 +259,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-09-19",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://apps.dss.mo.gov/fmsMedicaidProviderSearch/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 28
     },
     {
@@ -269,7 +269,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-10",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 29
     },
@@ -279,7 +279,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-26",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 30
     },
@@ -289,7 +289,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-27",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 31
     },
@@ -299,8 +299,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-05-19",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://nhmmis.nh.gov/portals/wps/portal/FindaHealthCareProvider",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 32
     },
     {
@@ -309,8 +309,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-14",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://guavahealth.com/provider-directory/new-jersey-medicaid-familycare",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 33
     },
     {
@@ -319,7 +319,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-10",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 34
     },
@@ -329,8 +329,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-03",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://health.data.ny.gov/stories/s/Medicaid-Enrolled-Provider-Lookup/ru78-uxr9/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 35
     },
     {
@@ -339,8 +339,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-08",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://ncmedicaidplans.gov/en",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 36
     },
     {
@@ -349,7 +349,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-05-08",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 37
     },
@@ -359,8 +359,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-09",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.ohiomh.com/home/findaprovider",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 38
     },
     {
@@ -369,8 +369,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-03",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://apps.okhca.org:456/OHCAProviderDirectory/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 39
     },
     {
@@ -379,7 +379,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-03",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 40
     },
@@ -389,8 +389,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2025-11-06",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://provider.directory.dhs.pa.gov/ProviderSearch.aspx",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 41
     },
     {
@@ -399,8 +399,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-27",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://providersearch.riproviderportal.org/ProviderSearchEOHHS/ProviderSearch.aspx",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 42
     },
     {
@@ -409,7 +409,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-09-18",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 43
     },
@@ -419,7 +419,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-09-26",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 44
     },
@@ -429,7 +429,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-08",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 45
     },
@@ -439,8 +439,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-08-07",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://opl.tmhp.com/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 46
     },
     {
@@ -449,8 +449,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-09",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://fp.medicaid.utah.gov/find-provider/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 47
     },
     {
@@ -459,8 +459,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-28",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.vtmedicaid.com/#/providerLookup",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 48
     },
     {
@@ -469,7 +469,7 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-09",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
+      "providerDirectoryWebsiteUrl": "Not available",
       "providerDirectoryWebsiteAvailable": false,
       "sourceRow": 49
     },
@@ -479,8 +479,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-05-03",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://fortress.wa.gov/hca/p1findaprovider/",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 50
     },
     {
@@ -489,8 +489,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-04-28",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.wvmmis.com/MhpViewer.aspx?auth=0&Url=https%3A%2F%2Fwww.wvmmis.com%2FMyHealthPAS%2FProvider%2FPages%2FProviderDirectory.aspx",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 51
     },
     {
@@ -499,8 +499,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2023-08-09",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.forwardhealth.wi.gov/WIPortal/Subsystem/Public/DirectorySearch.aspx",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 52
     },
     {
@@ -509,8 +509,8 @@ window.SMA_DIRECTORY_DATA = {
       "notes": "",
       "informationAsOfDate": "2024-10-15",
       "priorAuthorizationDecisionTimeframesUrl": "",
-      "providerDirectoryWebsiteUrl": "",
-      "providerDirectoryWebsiteAvailable": false,
+      "providerDirectoryWebsiteUrl": "https://www.wyomingmedicaid.com/portal/ProviderLocator",
+      "providerDirectoryWebsiteAvailable": true,
       "sourceRow": 53
     },
     {
@@ -6633,7 +6633,7 @@ window.SMA_DIRECTORY_DATA = {
     "stateCount": 56,
     "endpointCount": 280,
     "activeEndpointCount": 68,
-    "availableProviderDirectoryCount": 0,
+    "availableProviderDirectoryCount": 32,
     "apiTypes": [
       "Patient Access",
       "Provider Directory API",
