@@ -103,7 +103,7 @@ const mailto = buildMailtoUpdateHref({
   summary: "Update the Patient Access endpoint status.",
 });
 
-assert.ok(mailto.startsWith("mailto:smahoney@mitre.org?"));
+assert.ok(mailto.startsWith("mailto:SMAendpointDirectory@cms.hhs.gov?"));
 assert.ok(mailto.includes("subject=SMA%20Endpoint%20Directory%20update%20request%3A%20Alabama%20-%20Patient%20Access%20endpoint"));
 assert.ok(mailto.includes("State%20or%20territory%3A%20Alabama"));
 assert.ok(mailto.includes("Submitter%20email%3A%20person%40example.com"));

@@ -6,7 +6,7 @@ The site supports three paths:
 
 - Public overview of SMA provider directory and interoperability resources.
 - Searchable endpoint directory for Patient Access, Provider Directory API, Provider Access, Payer-to-Payer, and Prior Authorization records.
-- Non-submitting update request prototype for state and CMS review workflows.
+- Update request workflow for state and CMS review by form-generated email or workbook download.
 
 ## Source Of Truth
 
@@ -46,4 +46,4 @@ Do not claim full 508 compliance without automated scans and manual keyboard, fo
 
 ## Contact
 
-For questions about Medicaid interoperability initiatives, email `smahoney@mitre.org`.
+For questions about Medicaid interoperability initiatives or workbook updates, email `SMAendpointDirectory@cms.hhs.gov`.
