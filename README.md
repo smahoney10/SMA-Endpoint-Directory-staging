@@ -46,4 +46,4 @@ Do not claim full 508 compliance without automated scans and manual keyboard, fo
 
 ## Contact
 
-For questions about Medicaid interoperability initiatives, email `SMAEndpointDirectory@cms.hhs.gov`.
+For questions about Medicaid interoperability initiatives, email `smahoney@mitre.org`.

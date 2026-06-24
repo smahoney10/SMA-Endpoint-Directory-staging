@@ -124,7 +124,7 @@
     };
   }
 
-  function buildMailtoUpdateHref(data, recipient = "SMAEndpointDirectory@cms.hhs.gov") {
+  function buildMailtoUpdateHref(data, recipient = "smahoney@mitre.org") {
     const state = clean(data?.state);
     const updateType = clean(data?.updateType);
     const submitterEmail = clean(data?.submitterEmail);
