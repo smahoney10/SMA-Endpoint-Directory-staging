@@ -17,15 +17,15 @@
       </div>
 
       <div class="header-inner">
-        <a class="brand" href="#overview" aria-label="State Medicaid Agency Directory Hub home">
+        <a class="brand" href="index.html" aria-label="State Medicaid Agency Directory Hub home">
           <img src="CMS.png" alt="Centers for Medicare & Medicaid Services">
           <span>State Medicaid Agency Directory Hub</span>
         </a>
 
         <nav class="primary-nav" aria-label="Primary navigation">
           <a href="#overview">Overview</a>
-          <a href="#find-endpoints">Find endpoints</a>
-          <a href="#provider-directories">Provider directories</a>
+          <a href="endpoints.html">Find endpoints</a>
+          <a href="provider-directories.html">Provider directories</a>
           <a href="#submit-updates">Submit updates</a>
           <a href="#resources">Resources</a>
         </nav>
@@ -39,8 +39,8 @@
             <h1 id="page-title">State Medicaid Agency Directory Hub</h1>
             <p class="lead">Find state Medicaid provider directory links and interoperability API endpoints in one CMS-maintained resource.</p>
             <div class="hero-actions" aria-label="Primary actions">
-              <a class="button button-primary" href="#find-endpoints">Search endpoints</a>
-              <a class="button button-secondary" href="#provider-directories">View provider directories</a>
+              <a class="button button-primary" href="endpoints.html">Search endpoints</a>
+              <a class="button button-secondary" href="provider-directories.html">View provider directories</a>
               <a class="button button-ghost" href="#submit-updates">Submit an update</a>
             </div>
           </div>
@@ -75,129 +75,18 @@
             <article>
               <h3>Beneficiaries and the public</h3>
               <p>Find the public provider directory status for a state or territory.</p>
-              <a href="#provider-directories">Go to provider directories</a>
+              <a href="provider-directories.html">Go to provider directories</a>
             </article>
             <article>
               <h3>Application developers</h3>
               <p>Review production URLs, capability statements, registration details, sandbox links, and support contacts.</p>
-              <a href="#find-endpoints">Go to endpoint search</a>
+              <a href="endpoints.html">Go to endpoint search</a>
             </article>
             <article>
               <h3>State and CMS maintainers</h3>
               <p>Check workbook freshness and prepare corrections for review.</p>
               <a href="#submit-updates">Go to update requests</a>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="find-endpoints" aria-labelledby="endpoint-title">
-        <div class="container">
-          <div class="section-header">
-            <div>
-              <h2 id="endpoint-title">Find interoperability endpoints</h2>
-              <p>Search Medicaid endpoint records derived from the canonical XLSX workbook.</p>
-            </div>
-            <a class="button button-secondary" href="SMAEndpointDirectory.xlsx">Download workbook</a>
-          </div>
-
-          <form class="filter-panel" id="endpoint-filters" aria-describedby="endpoint-result-count">
-            <div class="field field-wide">
-              <label for="endpoint-query">Search endpoints</label>
-              <input id="endpoint-query" name="query" type="search" autocomplete="off" placeholder="State, URL, vendor, support contact">
-            </div>
-            <div class="field">
-              <label for="endpoint-state">State or territory</label>
-              <select id="endpoint-state" name="state"></select>
-            </div>
-            <div class="field">
-              <label for="endpoint-api-type">API type</label>
-              <select id="endpoint-api-type" name="apiType"></select>
-            </div>
-            <div class="field">
-              <label for="endpoint-status">Status</label>
-              <select id="endpoint-status" name="status"></select>
-            </div>
-            <div class="filter-actions">
-              <button class="button button-primary" type="submit">Apply filters</button>
-              <button class="button button-ghost" type="button" id="clear-endpoint-filters">Clear filters</button>
-            </div>
-          </form>
-
-          <p class="result-count" id="endpoint-result-count" aria-live="polite"></p>
-          <p class="sr-only" id="copy-status" aria-live="polite"></p>
-
-          <div class="table-wrap">
-            <table>
-              <caption class="sr-only">SMA interoperability endpoint records</caption>
-              <thead>
-                <tr>
-                  <th scope="col">State</th>
-                  <th scope="col">API type</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Copy Endpoint URL</th>
-                  <th scope="col">Vendor</th>
-                  <th scope="col">Details</th>
-                </tr>
-              </thead>
-              <tbody id="endpoint-table-body"></tbody>
-            </table>
-          </div>
-
-          <section class="detail-panel" id="endpoint-detail" hidden tabindex="-1" aria-labelledby="endpoint-detail-title">
-            <div class="detail-header">
-              <h3 id="endpoint-detail-title">Endpoint details</h3>
-              <button class="button button-ghost compact" type="button" id="close-endpoint-detail">Close</button>
-            </div>
-            <div id="endpoint-detail-content"></div>
-          </section>
-        </div>
-      </section>
-
-      <section class="section section-muted" id="provider-directories" aria-labelledby="provider-title">
-        <div class="container">
-          <div class="section-header">
-            <div>
-              <h2 id="provider-title">Provider directories</h2>
-              <p>Review state and territory provider directory website availability from the workbook.</p>
-            </div>
-            <span class="data-note" id="provider-data-note"></span>
-          </div>
-
-          <form class="filter-panel provider-filter-panel" id="provider-filters" aria-describedby="provider-result-count">
-            <div class="field field-wide">
-              <label for="provider-query">Search states and territories</label>
-              <input id="provider-query" name="query" type="search" autocomplete="off" placeholder="State or territory">
-            </div>
-            <div class="field">
-              <label for="provider-availability">Availability</label>
-              <select id="provider-availability" name="availability">
-                <option value="All">All</option>
-                <option value="Available">Available</option>
-                <option value="Unavailable">Unavailable</option>
-              </select>
-            </div>
-            <div class="filter-actions">
-              <button class="button button-primary" type="submit">Apply filters</button>
-              <button class="button button-ghost" type="button" id="clear-provider-filters">Clear filters</button>
-            </div>
-          </form>
-
-          <p class="result-count" id="provider-result-count" aria-live="polite"></p>
-
-          <div class="table-wrap">
-            <table>
-              <caption class="sr-only">Provider directory website links by state and territory</caption>
-              <thead>
-                <tr>
-                  <th scope="col">State or territory</th>
-                  <th scope="col">Information as of</th>
-                  <th scope="col">Provider directory website</th>
-                  <th scope="col">Prior authorization timeframes</th>
-                </tr>
-              </thead>
-              <tbody id="provider-table-body"></tbody>
-            </table>
           </div>
         </div>
       </section>

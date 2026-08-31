@@ -74,6 +74,9 @@
   }
 
   function setOptions(select, values, firstLabel) {
+    if (!select) {
+      return;
+    }
     select.innerHTML = [
       `<option value="All">${escapeHtml(firstLabel)}</option>`,
       ...values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`),
@@ -141,9 +144,9 @@
   }
 
   function renderSummary() {
-    elements.summaryStateCount.textContent = data.summary.stateCount;
-    elements.summaryEndpointCount.textContent = data.summary.endpointCount;
-    elements.summaryActiveCount.textContent = data.summary.activeEndpointCount;
+    if (elements.summaryStateCount) elements.summaryStateCount.textContent = data.summary.stateCount;
+    if (elements.summaryEndpointCount) elements.summaryEndpointCount.textContent = data.summary.endpointCount;
+    if (elements.summaryActiveCount) elements.summaryActiveCount.textContent = data.summary.activeEndpointCount;
   }
 
   function populateControls() {
@@ -151,7 +154,7 @@
     setOptions(elements.endpointApiType, data.summary.apiTypes, "All API types");
     setOptions(elements.endpointStatus, unique(data.endpoints.map((endpoint) => utils.normalizeStatus(endpoint.status))), "All statuses");
     setOptions(elements.updateState, unique(data.states.map((state) => state.state)), "Select a state or territory");
-    elements.updateState.querySelector('option[value="All"]').value = "";
+    if (elements.updateState) elements.updateState.querySelector('option[value="All"]').value = "";
   }
 
   function renderEndpoints() {
@@ -328,6 +331,7 @@
   }
 
   function bindEvents() {
+    if (elements.endpointForm) {
     elements.endpointForm.addEventListener("submit", (event) => {
       event.preventDefault();
       endpointFilters.query = elements.endpointQuery.value;
@@ -387,7 +391,9 @@
     elements.closeEndpointDetail.addEventListener("click", () => {
       elements.endpointDetail.hidden = true;
     });
+    }
 
+    if (elements.providerForm) {
     elements.providerForm.addEventListener("submit", (event) => {
       event.preventDefault();
       providerFilters.query = elements.providerQuery.value;
@@ -407,7 +413,9 @@
       providerFilters.availability = "All";
       renderProviderDirectories();
     });
+    }
 
+    if (elements.updateForm) {
     elements.updateForm.addEventListener("submit", (event) => {
       event.preventDefault();
       const formData = getUpdateFormData();
@@ -437,11 +445,12 @@
       elements.updateConfirmation.focus();
       window.location.href = href;
     });
+    }
   }
 
   renderSummary();
   populateControls();
   bindEvents();
-  renderEndpoints();
-  renderProviderDirectories();
+  if (elements.endpointForm) renderEndpoints();
+  if (elements.providerForm) renderProviderDirectories();
 })();

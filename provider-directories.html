@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Provider directories | State Medicaid Agency Directory Hub</title>
+    <meta name="description" content="Find State Medicaid Agency provider directory links.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="official-banner"><span aria-hidden="true" class="banner-dot"></span><span>A resource for State Medicaid Agency interoperability information</span></div>
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="State Medicaid Agency Directory Hub home"><img src="CMS.png" alt="Centers for Medicare &amp; Medicaid Services"><span>State Medicaid Agency Directory Hub</span></a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="index.html">Overview</a><a href="endpoints.html">Find endpoints</a><a aria-current="page" href="provider-directories.html">Provider directories</a><a href="index.html#submit-updates">Submit updates</a><a href="index.html#resources">Resources</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro" aria-labelledby="provider-title"><div class="container"><p class="eyebrow">Public access directory</p><h1 id="provider-title">Provider directories</h1><p class="lead">Review state and territory provider directory website availability from the workbook.</p></div></section>
+      <section class="section section-tight section-muted"><div class="container">
+        <div class="section-header"><p>Search for a state or territory, then open its public provider directory when available.</p><span class="data-note" id="provider-data-note"></span></div>
+        <form class="filter-panel provider-filter-panel" id="provider-filters" aria-describedby="provider-result-count">
+          <div class="field field-wide"><label for="provider-query">Search states and territories</label><input id="provider-query" name="query" type="search" autocomplete="off" placeholder="State or territory"></div>
+          <div class="field"><label for="provider-availability">Availability</label><select id="provider-availability" name="availability"><option value="All">All</option><option value="Available">Available</option><option value="Unavailable">Unavailable</option></select></div>
+          <div class="filter-actions"><button class="button button-primary" type="submit">Apply filters</button><button class="button button-ghost" type="button" id="clear-provider-filters">Clear filters</button></div>
+        </form>
+        <p class="result-count" id="provider-result-count" aria-live="polite"></p>
+        <div class="table-wrap"><table><caption class="sr-only">Provider directory website links by state and territory</caption><thead><tr><th scope="col">State or territory</th><th scope="col">Information as of</th><th scope="col">Provider directory website</th><th scope="col">Prior authorization timeframes</th></tr></thead><tbody id="provider-table-body"></tbody></table></div>
+      </div></section>
+    </main>
+    <footer class="site-footer"><div class="container"><p>This directory is maintained as part of the Medicaid Information Technology Architecture initiative.</p></div></footer>
+    <script src="assets/directory-data.js"></script><script src="assets/directory-utils.js"></script><script src="app.js"></script>
+  </body>
+</html>

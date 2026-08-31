@@ -217,6 +217,24 @@ h3 {
   background: linear-gradient(180deg, var(--color-cyan-light), var(--color-white));
 }
 
+.page-intro {
+  padding: 3.25rem 0 2.25rem;
+  background: linear-gradient(180deg, var(--color-cyan-light), var(--color-white));
+}
+
+.page-intro h1 {
+  margin-bottom: 0.75rem;
+}
+
+.eyebrow {
+  margin-bottom: 0.55rem;
+  color: var(--color-blue-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
@@ -336,6 +354,10 @@ h3 {
 .audience-band,
 .section {
   padding: 3.5rem 0;
+}
+
+.section-tight {
+  padding-top: 2.5rem;
 }
 
 .audience-grid {
