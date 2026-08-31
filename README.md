@@ -1,4 +1,4 @@
-# State Medicaid Agency Directory Hub
+# State Medicaid Agency Interoperability Hub
 
 This repository publishes a static GitHub Pages hub for State Medicaid Agency provider directory and interoperability endpoint information.
 

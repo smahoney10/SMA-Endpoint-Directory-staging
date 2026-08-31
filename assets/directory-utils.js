@@ -150,7 +150,7 @@
       "",
       `Requested change: ${summary}`,
       "",
-      "Source: State Medicaid Agency Directory Hub",
+      "Source: State Medicaid Agency Interoperability Hub",
     ].join("\r\n");
 
     return `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
